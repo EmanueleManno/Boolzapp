@@ -1,0 +1,224 @@
+/*CSS RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*UTILITIES*/
+body {
+    font-family: sans-serif;
+}
+
+/*CLASSE BORDER DA USARE PER LAYOUT*/
+.border-layout {
+    border: 1px solid black;
+}
+
+/*GENERICS*/
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+/*SPAZIO IMMAGINI*/
+.immagine {
+    border-radius: 50%;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+}
+
+/*SFONDO DELL'INTERA PAGINA*/
+#root {
+    background-image: linear-gradient( rgb(2,149,137) 10%, rgb(219,218,213) 10%);
+    height: 100vh;
+}
+
+/*APPLICAZIONE*/
+.applicazione {
+    height: 90vh;
+    width: 90%;
+}
+
+/*SEZIONE DI SINISTRA DELL'APPLICAZIONE*/
+
+/*AREA CONTATTI*/
+.area-contatti {
+    flex-basis: 35%;
+}
+
+/*ICONE CONTATTI*/
+.contatti i {
+    color: rgb(178,175,176);
+    font-size: 30px;
+    padding: 5px;
+}
+
+/*ICONE CAROSELLO*/
+.icone-carosello {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+/*TESTO ICONE CAROSELLO*/
+.icone-carosello span {
+    font-size: 10px;
+}
+
+/*NOME UTENTE*/
+.nome-utente {
+    flex-basis: 10%;
+    background-color: rgb(235,233,235);
+}
+
+/*ICONE DELLO SPAZIO DEL NOME UTENTE*/
+.nome-utente i {
+    color: rgb(178,175,176);
+    font-size: 30px;
+    padding: 5px;
+}
+
+/*CONTROLLO LE IMMAGINI*/
+.immagine img {
+    height: 50px;
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+/*SEZIONE NOTIFICHE*/
+.notifiche {
+    flex-basis: 10%;
+    background-color: rgb(144,217,253);
+}
+
+/*ICONE DELLA SEZIONE NOTIFICHE*/
+.notifiche i {
+    color: rgb(144,217,253);
+    border-radius: 50%;
+    background-color: white;
+    font-size: 30px;
+    padding: 10px;
+}
+
+/*TESTO DELLE NOTIFICHE*/
+.notifiche-text {
+    font-size: 15px;
+}
+
+/*TESTO SOTTOLINEATO NOTIFICHE*/
+.notifiche-text-underline {
+    font-size: 15px;
+    color: grey;
+    text-decoration: underline;
+}
+
+/*BARRA DI RICERCA CHAT*/
+.search-bar {
+    flex-basis: 8%;
+    background-color: rgb(235,233,235);
+}
+
+/*SEZIONE CONTATTI*/
+.contatti {
+    flex-basis: 72%;
+    background-color: rgb(235,233,235);
+    overflow-x: hidden;
+    cursor: pointer;
+}
+
+
+/*SEZIONE DI DESTRA DELL'APPLICAZIONE*/
+
+/*AREA CHAT*/
+.area-chat {
+    flex-basis: 65%;
+}
+
+/*SPAZIO DEL CONTATTO DELLA CHAT*/
+.contatto-chat {
+    flex-basis: 10%;
+    background-color: rgb(235,233,235);
+}
+
+/*ICONCINE DELLA SEZIONE DEL CONTATTO CHAT*/
+.contatto-chat i {
+    color: rgb(178,175,176);
+    font-size: 30px;
+    padding: 5px;
+}
+
+/*CLASSE ACTIVE*/
+.contatto-chat .active {
+    display: block;
+}
+
+/*SPAZIO DELLA CHAT*/
+.spazio-chat {
+    flex-basis: 80%;
+    background-image: url(img/mine.jpg);
+    overflow-x: hidden;
+}
+
+/*CONTENITORE DEI MESSAGGI*/
+.message-container {
+    display: flex;
+}
+
+/*COMPORTAMENTO MESSAGGI MANDATI*/
+.message-container.sent {
+    justify-content: flex-end;
+}
+
+/*COMPORTAMENTO MESSAGGI RICEVUTI*/
+.message-container.received {
+    justify-content: flex-start;
+}
+
+/*SFONDO MESSAGGI MANDATI*/
+.message-container.sent .message {
+    background-color: rgb(215,242,193);
+}
+
+/*SFONDO MESSAGGI RICEVUTI*/
+.message-container.received .message {
+    background-color: white;
+}
+
+/*CONTENUTO DEL TESTO DEL MESSAAGGIO*/
+.message-container p {
+    margin-bottom: 0;
+}
+
+/*DATA DEL MESSAGGIO*/
+.message-container .message time {
+    display: block;
+    text-align: right;
+    font-size: 10px;
+    color: gray;
+}
+
+/*SPAZIO PER MANDARE MESSAGGI*/
+.manda-messaggio {
+    flex-basis: 10%;
+    background-color: rgb(245,238,235);
+}
+
+/*SPAZIO ICONA DELLA CHAT*/
+.ico-chat {
+    flex-basis: 10%;
+}
+
+/*SPAZIO TESTO DELA CHAT*/
+.text-chat {
+    flex-basis: 80%;
+}
+
+/*ICONE DELLA CHAT*/
+.ico-chat i {
+    color: rgb(117, 109, 110);
+    font-size: 30px;
+    padding: 5px;
+}
